@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PCOD Decode</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+    color: #e91e63;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin-left: 1.5rem;
+  }
+
+  nav ul li a {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #e91e63;
+  }
+
+        body {
+            background: linear-gradient(68.4deg, rgba(248, 182, 204, 1) 0.5%, rgba(192, 198, 230, 1) 49%, rgba(225, 246, 240, 1) 99.8%);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: 'Exo', sans-serif;
+            color: #333;
+        }
+
+        
+        .form-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+            border-radius: 10px;
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h3 {
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .form-container label {
+            display: block;
+            margin: 15px 0 5px;
+            font-size: 16px;
+            color: #555;
+        }
+
+        .form-container input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            background: transparent;
+            font-size: 16px;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #FF7F50;
+            color: #fff;
+            font-size: 18px;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #F37335;
+        }
+
+        .footer {
+            text-align: center;
+            margin-top: 40px;
+            font-size: 14px;
+            color: #555;
+        }
+
+        .footer a {
+            color: #FF7F50;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .nav-links {
+                margin-top: 10px;
+            }
+
+            .form-container {
+                padding: 20px;
+                width: 90%;
+            }
+
+            .form-container h3 {
+                font-size: 20px;
+            }
+
+            .form-container input[type="submit"] {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+      <div class="logo">
+          <a href="/">
+              <h1>PCOD Decode</h1>
+          </a>
+      </div>
+      <nav>
+          <ul>
+              <li><a href="/about">About</a></li>
+              <li><a href="/choose">Test</a></li>
+              <li><a href="/remedy">Remedy</a></li>
+          </ul>
+      </nav>
+    </header>
+    <div class="form-container">
+        <h3>PCOD Health Assessment</h3>
+        <form method="POST" action="{{ url_for('home') }}">
+            <label for="age">Age</label>
+            <input type="text" name="a" placeholder="Enter your age" required>
+
+            <label for="weight">Weight (kg)</label>
+            <input type="text" name="b" placeholder="Enter your weight" required>
+
+            <label for="height">Height (cm)</label>
+            <input type="text" name="c" placeholder="Enter your height" required>
+
+            <label for="bmi">BMI (Height/Weight)</label>
+            <input type="text" name="d" placeholder="Enter your BMI" required>
+
+            <label for="blood-group">Blood Group</label>
+            <input type="text" name="e" placeholder="Enter your blood group" required>
+
+            <label for="pulse">Pulse Rate (bpm)</label>
+            <input type="text" name="f" placeholder="Enter your pulse rate" required>
+
+            <label for="rr">RR (breaths/min)</label>
+            <input type="text" name="g" placeholder="Enter your RR" required>
+
+            <label for="hb">Hb (g/dl)</label>
+            <input type="text" name="h" placeholder="Enter your Hb level" required>
+
+            <label for="cycle-length">Cycle Length (days)</label>
+            <input type="text" name="i" placeholder="Enter cycle length" required>
+
+            <label for="marriage-status">Marriage Status (Yrs)</label>
+            <input type="text" name="j" placeholder="Enter marriage years" required>
+
+            <label for="pregnant">Pregnant (Y/N)</label>
+            <input type="text" name="k" placeholder="Enter 1 if yes, else 0" required>
+
+            <label for="abortions">Number of Abortions</label>
+            <input type="text" name="l" placeholder="Enter number of abortions" required>
+
+            <label for="fsh">FSH (mIU/mL)</label>
+            <input type="text" name="m" placeholder="Enter your FSH level" required>
+
+            <label for="lh">LH (mIU/mL)</label>
+            <input type="text" name="n" placeholder="Enter your LH level" required>
+
+            <label for="fsh-lh">FSH/LH Ratio</label>
+            <input type="text" name="o" placeholder="Enter your FSH/LH ratio" required>
+
+            <label for="hip">Hip (inches)</label>
+            <input type="text" name="p" placeholder="Enter your hip size" required>
+
+            <label for="waist">Waist (inches)</label>
+            <input type="text" name="q" placeholder="Enter your waist size" required>
+
+            <label for="waist-hip-ratio">Waist/Hip Ratio</label>
+            <input type="text" name="r" placeholder="Enter waist/hip ratio" required>
+
+            <label for="tsh">TSH (mIU/L)</label>
+            <input type="text" name="s" placeholder="Enter your TSH level" required>
+
+            <label for="prl">PRL (ng/mL)</label>
+            <input type="text" name="t" placeholder="Enter your PRL level" required>
+
+            <label for="vit-d3">Vitamin D3 (ng/mL)</label>
+            <input type="text" name="u" placeholder="Enter your Vitamin D3 level" required>
+
+            <label for="prg">Progesterone (ng/mL)</label>
+            <input type="text" name="v" placeholder="Enter progesterone level" required>
+
+            <label for="rbs">RBS (mg/dl)</label>
+            <input type="text" name="w" placeholder="Enter your RBS" required>
+
+            <label for="weight-gain">Weight Gain (Y/N)</label>
+            <input type="text" name="x" placeholder="Enter 1 if yes, else 0" required>
+
+            <label for="hair-growth">Hair Growth (Y/N)</label>
+            <input type="text" name="y" placeholder="Enter 1 if yes, else 0" required>
+
+            <label for="skin-darkening">Skin Darkening (Y/N)</label>
+            <input type="text" name="z" placeholder="Enter 1 if yes, else 0" required>
+
+            <label for="hair-loss">Hair Loss (Y/N)</label>
+            <input type="text" name="za" placeholder="Enter 1 if yes, else 0" required>
+
+            <label for="pimples">Pimples (Y/N)</label>
+            <input type="text" name="zb" placeholder="Enter 1 if yes, else 0" required>
+
+            <label for="fast-food">Fast Food Consumption (Y/N)</label>
+            <input type="text" name="zc" placeholder="Enter 1 if yes, else 0" required>
+
+            <label for="regular-exercise">Regular Exercise (Y/N)</label>
+            <input type="text" name="zd" placeholder="Enter 1 if yes, else 0" required>
+
+            <label for="bp-systolic">BP Systolic (mmHg)</label>
+            <input type="text" name="ze" placeholder="Enter systolic BP" required>
+
+            <label for="bp-diastolic">BP Diastolic (mmHg)</label>
+            <input type="text" name="zf" placeholder="Enter diastolic BP" required>
+
+            <label for="follicle-no-left">Follicle No (Left)</label>
+            <input type="text" name="zg" placeholder="Enter follicle number left" required>
+
+            <label for="follicle-no-right">Follicle No (Right)</label>
+            <input type="text" name="zh" placeholder="Enter follicle number right" required>
+
+            <label for="breast-size-left">Avg Breast Size (Left) (mm)</label>
+            <input type="text" name="zi" placeholder="Enter breast size left" required>
+
+            <label for="breast-size-right">Avg Breast Size (Right) (mm)</label>
+            <input type="text" name="zj" placeholder="Enter breast size right" required>
+
+            <label for="insulin-levels">Insulin Levels (æIU/ml)</label>
+            <input type="text" name="zk" placeholder="Enter insulin levels" required>
+
+            <input type="submit" value="Get Result">
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>Powered by <a href="#">PCOD Decode</a></p>
+    </div>
+
+</body>
+</html>

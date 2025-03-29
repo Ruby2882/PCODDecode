@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href=".css">
+</head>
+<style>
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo h1 {
+    font-size: 1.5rem;
+    color: #e91e63;
+  }
+
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  nav ul li {
+    margin-left: 1.5rem;
+  }
+
+  nav ul li a {
+    color: #333;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  nav ul li a:hover {
+    color: #e91e63;
+  }
+
+  .main-card-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  .left-block {
+    height: 400px;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .right-block {
+    height: 400px;
+    width: 50vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .block-header-container {
+    width: 70vw;
+    display: inline-flex;
+  }
+
+  .general-card {
+    width: 300px;
+    height: 250px;
+    padding: 24px;
+    background-color: #0288D1;
+    border-radius: 12px;
+  }
+
+  .general-card h2, p{
+    text-align: center;
+    color: whitesmoke;
+  }
+
+  .submit-button {
+    width: 120px;
+    border-radius: 12px;
+    padding: 5px;
+    margin: 12px 0px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: black; /* Default background color */
+    color: white; /* Text color */
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease; /* Smooth transition */
+}
+
+.submit-button:hover {
+    background-color: green; /* Hover background color */
+    transform: scale(1.1); /* Pop effect (slightly enlarge) */
+}
+
+.button-class {
+    display: flex;
+    justify-content: center;
+}
+
+.text-block {
+  display: flex;
+  justify-content: center;
+}
+
+.text-line {
+  width: 70vw;
+  text-align: center;
+  color: black;
+}
+
+.text-line p, h3{
+  color: black;
+}
+
+
+</style>
+<body>
+  <header>
+        <div class="logo">
+            <a href="/">
+                <h1>PCOD Decode</h1>
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="/about">About</a></li>
+                <li><a href="/choose">Test</a></li>
+                <li><a href="/remedy">Remedy</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="main-card-container">
+      <div class="block-header-container">
+        <div class="left-block">
+          <div class="general-card">
+            <h2>GENERAL TEST</h2>
+            <p>If you are showing symptoms and have delayed periods you can take this test to be sure whether you have PCOS.Further you need to visit Doctor</p>
+            <a href="/test" class="button-class">
+              <button class="submit-button">
+                TAKE TEST
+              </button>
+            </a>
+          </div>
+        </div>
+        <div class="right-block">
+          <div class="general-card">
+            <h2>PROFFESSIONAL TEST</h2>
+            <p>If you are a doctor or have done all the required blood tests and sonography then you can take this test</p>
+            <a href="/test1" class="button-class">
+              <button class="submit-button">
+                TAKE TEST
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="text-block">
+      <div class="text-line">
+        <h3></h3>
+        <body>
+          <body style="background-color:rgb(255, 255, 255);">
+         <div class="login">
+          <h1 style="text-align:center; color:rgb(0, 0, 0);"><u>Predict PCOS</u></h1>
+          <br>
+          <h2 style="text-align:centre; color:rgb(0, 0, 0);"><u>Hormonal Information</u></h2>
+        <table BORDER=7 CELLSPACING=2>
+          <tr>
+            <th></th>
+            <th style="text-align:center; color:rgb(0, 0, 0);">Hormone Name</th>
+            <th style="text-align:center; color:rgb(0, 0, 0);">Description</th>
+          </tr>
+          <tr>
+            <td style="text-align:center;color:rgb(0, 0, 0);">FSH</td>
+            <td  style=" text-align:centre;color:rgb(0, 0, 0);">Follicle Stimulating Hormone</td>
+            <td  style="color:rgb(7, 7, 7);">Women with PCOS often do not ovulate on a monthly basis due to low FSH levels(6 mlU/ml)</td>
+          </tr>
+          <tr>
+            <td  style="text-align:center; color:rgb(5, 5, 5);">LH</td>
+            <td  style="text-align:centre; color:rgb(0, 0, 0);">Luteinizing hormone</td>
+            <td  style=" color:rgb(0, 0, 0);">Women with PCOS often have high levels of LH secretion(18 mlU/ml).</td>
+          </tr>
+          <tr>
+            <td  style="text-align:center; color:rgb(0, 0, 0);">TSH</td>
+            <td  style="text-align:centre; color:rgb(0, 0, 0);">Thyroid Stimulating Hormone</td>
+            <td  style=" color:rgb(3, 3, 3);">Elevated TSH (indicating hypothyroid) in PCOS patients</td>
+          </tr>
+          <tr>
+            <td style="text-align:center; color:rgb(7, 7, 7);">AMH</td>
+            <td style=" color:rgb(7, 7, 7);">Anti Mullerian Hormone</td>
+            <td style=" color:rgb(0, 0, 0);">Women with PCOS often have elevated AMH levels.
+            At any age, a score over 48 pmol/L is considered high and could be a sign of PCOS.</td>
+          </tr>
+          <tr>
+            <td style="text-align:center; color:rgb(0, 0, 0);">PRL</td>
+            <td style="color:rgb(0, 0, 0);">Prolactin level</td>
+            <td style="color:rgb(0, 0, 0);">Patients with PCOS can have mildly elevated prolactin levels</td>
+          </tr>
+          <tr>
+            <td style="text-align:center; color:rgb(0, 0, 0);">Vit D3</td>
+            <td style="color:rgb(0, 0, 0);">Vitamin D3</td>
+            <td style="color:rgb(0, 0, 0);">The prevalence of vitamin D deficiency in women with PCOS is about 67-85%</td>
+          </tr>
+          <tr>
+            <td style="text-align:center; color:rgb(0, 0, 0);">PRG</td>
+            <td style="color:rgb(10, 10, 10);">Progestrone Level</td>
+            <td style="color:rgb(8, 8, 8);">Women with polycystic ovary syndrome (PCOS) need higher levels of progesterone to slow the
+             frequency of GnRH pulse secretion, resulting in insufficient plasma FSH synthesis and persistent plasma LH stimulation
+              of ovarian androgens.</td>
+          </tr>
+          <tr>
+            <td style="text-align:center; color:rgb(10, 10, 10);">RBS</td>
+            <td style="color:rgb(2, 2, 2);">Random Blood Sugar</td>
+            <td style="color:rgb(14, 13, 13);"> As many as 30% to 40% of women who have PCOS also have insulin resistance a condition
+             that leads to high glucose levels and the potential for pre-diabetes and type 2 diabetes.</td>
+          </tr>
+        </table>
+        <br>
+        <h4 style="color:rgb(10, 10, 10);"><u>NOTE</u></h4>
+        <ul>
+        <li style="color:rgb(0, 0, 0);">Systolic blood pressure</li>
+        <p style="color:rgb(29, 27, 27);">Is the pressure when the heart beats while the heart muscle is contracting (squeezing) and pumping oxygen-rich blood into the blood vessels.</p>
+        <li style="color:rgb(2, 2, 2);">Diastolic blood pressure</li>
+        <p style="color:rgb(3, 3, 3);">Is the pressure on the blood vessels when the heart muscle relaxes. The diastolic pressure is always lower than the systolic pressure.</p>
+        <li style="color:rgb(5, 5, 5);">Follicle Count(both Left and Right)</li>
+        <p style="color:rgb(0, 0, 0);">In polycystic ovary syndrome, abnormal hormone levels prevent follicles from growing and maturing to release egg cells. Instead, these immature follicles accumulate in the ovaries. Affected women can have 12 or more of these follicles. The number of these follicles usually decreases with age.</p>
+        </ul>
+        <br><br>
+        <p style="color:rgb(0, 0, 0);">Note: For questions where you need to answer Yes or No, input 1 as Yes and 0 as No. Use metric system to input the data</p>
+           <br>
+      </div>
+    </div>
+</body>
+</html>
