@@ -21,9 +21,11 @@
 name: Build and deploy Python app to Azure Web App
 
 env:
-  AZURE_WEBAPP_NAME: my-azure-web-app  # Update this to the name of your Azure Web App
+  AZURE_WEBAPP_NAME: PCODDecode # Ensure this matches your Azure Web App name
 
-  DOCKER_IMAGE_NAME: my-docker-image  # Update this to your desired Docker image name
+
+  DOCKER_IMAGE_NAME: PCODDecode  # Update this to your desired Docker image name
+
 
 
   PYTHON_VERSION: '3.8'              # set this to the Python version to use

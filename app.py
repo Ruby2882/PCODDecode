@@ -6,7 +6,7 @@ import numpy as np
 
 
 app = Flask(__name__)
-app.config["MONGO_URI"] = "mongodb://localhost:27017/PCODDecode"  # Update with your MongoDB URI
+app.config["MONGO_URI"] = "your_cloud_mongodb_uri"  # Update with your cloud MongoDB URI
 mongo = PyMongo(app)
 
 
