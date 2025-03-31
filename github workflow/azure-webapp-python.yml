@@ -39,7 +39,7 @@ jobs:
       - name: Push Docker image
         run: |
           docker tag pcoddecode:latest ${{ secrets.AZURE_CONTAINER_REGISTRY }}/pcoddecode:latest
-          docker push ${{ secrets.AZURE_CONTAINER_REGISTRY }}/myapp:latest
+          docker push ${{ secrets.AZURE_CONTAINER_REGISTRY }}/pcoddecode:latest
 
   deploy:
     runs-on: ubuntu-latest
