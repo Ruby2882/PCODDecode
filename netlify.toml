@@ -1,0 +1,8 @@
+# Netlify configuration file for deploying a Next.js application
+
+[build]
+  publish = ".next"  # Specify the directory for Next.js builds
+  command = "npm run build"  # Command to build your Next.js application
+
+[dev]
+  command = "npm run dev"  # Command to run your application in development mode
