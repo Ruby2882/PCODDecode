@@ -1,2 +1,4 @@
 # Ignore the virtual environment directory
 venv/
+# Ignore the specific problematic file
+venv/Lib/site-packages/pandas/tests/io/data/legacy_pickle/1.2.4/empty_frame_v1_2_4-GH#42345.pkl
