@@ -1,3 +1,4 @@
+
 from flask import Flask, request, url_for, redirect, render_template
 import pickle
 import numpy as np
@@ -45,6 +46,6 @@ def predict():
 
 
 if __name__ == "__main__":
+     app.run()
     # Use a production WSGI server like Gunicorn
     # Use Gunicorn for production
-    app.run(host='0.0.0.0', port=5000)
