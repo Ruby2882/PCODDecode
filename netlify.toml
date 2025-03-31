@@ -6,3 +6,4 @@
 
 [dev]
   command = "python app.py"  # Command to run your application in development mode
+
