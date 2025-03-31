@@ -1,4 +1,5 @@
-
+# Triggering deployment workflow
+# This is a temporary comment for deployment purposes.
 from flask import Flask, request, url_for, redirect, render_template
 import pickle
 import numpy as np
@@ -43,9 +44,5 @@ def predict():
     return render_template("index.html", data=pred)
 
 
-
-
 if __name__ == "__main__":
-     app.run()
-    # Use a production WSGI server like Gunicorn
-    # Use Gunicorn for production
+    app.run()  # Start the Flask application
