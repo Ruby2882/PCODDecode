@@ -46,4 +46,5 @@ def predict():
 
 if __name__ == "__main__":
     # Use a production WSGI server like Gunicorn
-    app.run()
+    # Use Gunicorn for production
+    app.run(host='0.0.0.0', port=5000)
