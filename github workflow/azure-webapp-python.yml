@@ -38,7 +38,7 @@ jobs:
 
       - name: Push Docker image
         run: |
-          docker tag myapp:latest ${{ secrets.AZURE_CONTAINER_REGISTRY }}/myapp:latest
+          docker tag pcoddecode:latest ${{ secrets.AZURE_CONTAINER_REGISTRY }}/pcoddecode:latest
           docker push ${{ secrets.AZURE_CONTAINER_REGISTRY }}/myapp:latest
 
   deploy:
